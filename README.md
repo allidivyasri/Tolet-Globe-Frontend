@@ -1,4 +1,5 @@
 
+
 # To-Let Globe : Frontend
 
 This repository contains the codebase for the frontend of the project for "To-Let Globe" designed to facilitate property rentals, reviews, FAQs, and other related functionalities. Below is an overview of the folder structure, key components, and instructions for creating new pages and making API calls.
