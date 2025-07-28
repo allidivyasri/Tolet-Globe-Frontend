@@ -198,3 +198,18 @@
     display: none;
   }
 }
+/* === Updated code from here: Responsive timeline dots and card text === */
+@media (max-width: 768px) {
+  .left::after,
+  .right::after {
+    display: none;
+  }
+
+  .text-box {
+    text-align: center;
+    width: 100%;
+    min-width: 100%;
+    margin: 1rem auto;
+  }
+}
+/* === Updated code ends here === */

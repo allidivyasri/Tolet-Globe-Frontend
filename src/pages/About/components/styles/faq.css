@@ -5,3 +5,20 @@
 .question i {
   color: #D3A01F;
 }
+/* ===  Updated code from here: Responsive FAQ container and font sizes === */
+.faq-container {
+  padding: 2rem 1rem;
+}
+
+.header h1 {
+  font-size: clamp(1.25rem, 5vw, 2rem);
+}
+
+.question h4 {
+  font-size: clamp(1rem, 4vw, 1.5rem);
+}
+
+.answer p {
+  font-size: clamp(0.875rem, 3vw, 1.125rem);
+}
+/* === Updated code ends here === */
