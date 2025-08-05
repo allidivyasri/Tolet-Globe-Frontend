@@ -1,12 +1,13 @@
+
 .left::after {
   content: "";
-  background-image: url(../../../../assets/about/logo1.jpeg);
+  background-image: url(../../../../assets/about/logo1.jpeg); /* Custom image used as timeline dot */
   background-size: contain;
-  box-shadow: 0 0 0.5em #6cc0c4;
+  box-shadow: 0 0 0.5em #6cc0c4; /* Blue glow */
   width: 3.9em;
   height: 4em;
   position: absolute;
-  left: 94.4%;
+  left: 94.4%; /* Custom left alignment */
   top: 43%;
   border-radius: 50%;
   z-index: 1;
@@ -14,144 +15,72 @@
 
 .right::after {
   content: "";
-  background-image: url(../../../../assets/about/logo1.jpeg);
+  background-image: url(../../../../assets/about/logo1.jpeg); /* Same image for right side */
   background-position: cover;
   background-size: contain;
   box-shadow: 0 0 0.5em #6cc0c4;
   width: 3.9em;
   height: 4em;
   position: absolute;
-  right: 95.5%;
+  right: 95.5%; /* Custom right alignment */
   top: 43%;
   border-radius: 50%;
   z-index: 1;
 }
 
-/* Media query for small screen */
+/* ========== MEDIA QUERIES FOR RESPONSIVE ALIGNMENT ========== */
+
+/* ✅ Custom positions for 768px - 990px screens */
 @media ((min-width: 768px) and (max-width: 990px)) {
   .left::after {
-    content: "";
-    background-image: url(../../../../assets/about/logo1.jpeg);
-    background-size: contain;
-    box-shadow: 0 0 0.5em #6cc0c4;
-    width: 3.9em;
-    height: 4em;
-    position: absolute;
     left: 95%;
-    top: 43%;
-    border-radius: 50%;
-    z-index: 1;
   }
 
   .right::after {
-    content: "";
-    background-image: url(../../../../assets/about/logo1.jpeg);
-    background-position: cover;
-    background-size: contain;
-    box-shadow: 0 0 0.5em #6cc0c4;
-    width: 3.9em;
-    height: 4em;
-    position: absolute;
     right: 92.5%;
     top: 46%;
-    border-radius: 50%;
-    z-index: 1;
   }
 }
 
+/* ✅ Adjusted positions for 990px - 1025px screens */
 @media ((min-width: 990px) and (max-width: 1025px)) {
   .left::after {
-    content: "";
-    background-image: url(../../../../assets/about/logo1.jpeg);
-    background-size: contain;
-    box-shadow: 0 0 0.5em #6cc0c4;
-    width: 3.9em;
-    height: 4em;
-    position: absolute;
     left: 97%;
-    top: 43%;
-    border-radius: 50%;
-    z-index: 1;
   }
 
   .right::after {
-    content: "";
-    background-image: url(../../../../assets/about/logo1.jpeg);
-    background-position: cover;
-    background-size: contain;
-    box-shadow: 0 0 0.5em #6cc0c4;
-    width: 3.9em;
-    height: 4em;
-    position: absolute;
     right: 93.5%;
     top: 46%;
-    border-radius: 50%;
-    z-index: 1;
   }
 }
 
+/* ✅ Adjustments for 1025px - 1200px range */
 @media ((min-width: 1025px) and (max-width: 1200px)) {
   .left::after {
-    content: "";
-    background-image: url(../../../../assets/about/logo1.jpeg);
-    background-size: contain;
-    box-shadow: 0 0 0.5em #6cc0c4;
-    width: 3.9em;
-    height: 4em;
-    position: absolute;
     left: 98%;
     top: 42%;
-    border-radius: 50%;
-    z-index: 1;
   }
 
   .right::after {
-    content: "";
-    background-image: url(../../../../assets/about/logo1.jpeg);
-    background-position: cover;
-    background-size: contain;
-    box-shadow: 0 0 0.5em #6cc0c4;
-    width: 3.9em;
-    height: 4em;
-    position: absolute;
     right: 94.5%;
     top: 42%;
-    border-radius: 50%;
-    z-index: 1;
   }
 }
 
+/* ✅ Adjustments for 1200px - 1450px screens */
 @media ((min-width: 1200px) and (max-width: 1450px)) {
   .left::after {
-    content: "";
-    background-image: url(../../../../assets/about/logo1.jpeg);
-    background-size: contain;
-    box-shadow: 0 0 0.5em #6cc0c4;
-    width: 3.9em;
-    height: 4em;
-    position: absolute;
     left: 99%;
     top: 42%;
-    border-radius: 50%;
-    z-index: 1;
   }
 
   .right::after {
-    content: "";
-    background-image: url(../../../../assets/about/logo1.jpeg);
-    background-position: cover;
-    background-size: contain;
-    box-shadow: 0 0 0.5em #6cc0c4;
-    width: 3.9em;
-    height: 4em;
-    position: absolute;
     right: 95.5%;
     top: 42%;
-    border-radius: 50%;
-    z-index: 1;
   }
 }
 
+/* ✅ Hide dots on very small screens (360px - 380px) */
 @media ((min-width: 360px) and (max-width: 380px)) {
   .text-box {
     min-width: 21rem;
@@ -159,57 +88,40 @@
     text-align: center;
   }
 
-  .left::after {
-    display: none;
-  }
-
+  .left::after,
   .right::after {
-    display: none;
+    display: none; /* Hiding timeline dots for better mobile UI */
   }
 }
 
-@media ((min-width: 380px) and (max-width:400px)) {
+/* ✅ Margin and width tweaks for 380px - 400px */
+@media ((min-width: 380px) and (max-width: 400px)) {
   .text-box {
     margin-left: 1rem;
     min-width: 19rem;
   }
 }
 
-@media ((min-width: 400px) and (max-width:500px)) {
+/* ✅ More width tweaks for 400px - 500px */
+@media ((min-width: 400px) and (max-width: 500px)) {
   .text-box {
     min-width: 23rem;
     margin-left: 0.9rem;
   }
 }
 
-@media ((min-width: 500px) and (max-width:680)) {
+/* ⚠️ TYPO FIX NEEDED: (max-width: 680) ➝ (max-width: 680px) */
+@media ((min-width: 500px) and (max-width: 680px)) {
   .left::after {
     left: 90%;
     top: 43%;
   }
 }
 
+/* ✅ Final fallback: hide both dots for screens below 500px */
 @media (max-width: 500px) {
-  .left::after {
-    display: none;
-  }
-
-  .right::after {
-    display: none;
-  }
-}
-/* === Updated code from here: Responsive timeline dots and card text === */
-@media (max-width: 768px) {
   .left::after,
   .right::after {
     display: none;
   }
-
-  .text-box {
-    text-align: center;
-    width: 100%;
-    min-width: 100%;
-    margin: 1rem auto;
-  }
 }
-/* === Updated code ends here === */
